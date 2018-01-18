@@ -12,7 +12,7 @@ import {
     View,
     TouchableOpacity
 } from 'react-native';
-import IterateUpButton from './IterateUpButton';
+import IterateButton from './IterateButton';
 import styles from '../styles/AppStyles';
 
 // enables the state function for iterating the number after pressing either button
@@ -26,21 +26,32 @@ class Value extends  Component
     }
     iterateup = () => {
         this.setState({
-            value: this.state.count + 1
+            value: this.state.value + 1
         })
     };
 
     iteratedown = () =>{
             this.setState({
-                value: this.state.count-1
+                value: this.state.value-1
             });
     };
 }
 
 export default class App extends Component<{}> {
 
-
+    render() {
+    return (
+        <View style={styles.container}>
+            <Text>hey</Text>
+            <TouchableOpacity  onPress={this.iterateup} ><Text> iterate up</Text></TouchableOpacity>
+            <Text>hey2</Text>
+            <TouchableOpacity  onPress={this.iteratedown} ><Text> iterate down</Text></TouchableOpacity>
+        </View>
+    );
 }
+}
+
+
 
 
 

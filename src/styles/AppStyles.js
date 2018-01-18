@@ -13,28 +13,30 @@ export default StyleSheet.create({
         },
     number:
         {
-            fontSize: 25,
+
             margin: 10,
-            textAlign: 'center'
+            alignItems: 'center'
         },
     instructions:
         {
-            textAlign: 'center',
+            alignItems: 'center',
            
             marginBottom: 5,
         },
     iterateup:
         {
-            fontSize: 14,
-            textAlign: 'center',
+
+            alignItems: 'center',
             backgroundColor:'#3cb05b',
-            color:'white',
         },
     iteratedown:
         {
-            fontSize: 14,
-            textAlign: 'center',
+
+            alignItems: 'center',
             backgroundColor:'#f44531',
-            color:'white',
         },
+    buttonstuff:
+        {
+            backgroundColor:'#24b8f4',
+        }
 });
