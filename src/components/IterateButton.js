@@ -13,7 +13,7 @@ export default class IterateUpButton extends Component {
                 style={styles.buttonstuff}
                 onPress={() => this.props.iterationbutton}
 
-            />
+            ><Text>iterateinfo</Text></TouchableOpacity>
         );
     }
 }

@@ -1,9 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import {
     Platform,
@@ -12,12 +6,11 @@ import {
     View,
     TouchableOpacity
 } from 'react-native';
-import IterateButton from './IterateButton';
 import styles from '../styles/AppStyles';
-
-
-
-export default class App extends Component<{}> {
+// enables the state function for iterating the number after pressing either button
+class Value extends  Component
+{
+    //constructs the prop which displays the current value
     constructor(props)
     {
         super(props);
@@ -25,17 +18,6 @@ export default class App extends Component<{}> {
         this.iterateDown();
         this.iterateUp();
     }
-
-    render() {
-    return (
-        <View style={styles.container}>
-            <Text> {this.state.value} </Text>
-            <IterateButton   onPress={this.iterateUp}/>
-            <Text>hey2</Text>
-            <IterateButton   onPress={this.iterateDown} />
-        </View>
-    );
-}
     iterateUp() {
         iterateup = (() => {
             this.setState({
@@ -51,8 +33,3 @@ export default class App extends Component<{}> {
         });
     }
 }
-
-
-
-
-
