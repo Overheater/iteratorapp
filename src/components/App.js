@@ -14,6 +14,7 @@ import {
 } from 'react-native';
 import IterateButton from './IterateButton';
 import styles from '../styles/AppStyles';
+import Value from './Value';
 
 
 
@@ -39,7 +40,7 @@ export default class App extends Component<{}> {
     render() {
     return (
         <View style={styles.container}>
-            <Text style={styles.countText}>{this.state.value}</Text>
+            <Value countval={this.state.value}/>
             <Text style={styles.countText}> </Text>
             <IterateButton buttonstyle={styles.iterateup} buttonName='iterate up' iterationbutton={()=>this.iterateUp()}/>
             <Text style={styles.countText}> </Text>
