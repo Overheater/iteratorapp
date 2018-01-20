@@ -10,10 +10,9 @@ export default class IterateUpButton extends Component {
     render() {
         return (
             <TouchableOpacity
-                style={styles.buttonstuff}
-                onPress={() => this.props.iterationbutton}
-
-            ><Text>iterateinfo</Text></TouchableOpacity>
+                style={this.props.buttonstyle}
+                onPress={this.props.iterationbutton}>
+                <Text style={styles.buttontext}>{this.props.buttonName}</Text></TouchableOpacity>
         );
     }
 }

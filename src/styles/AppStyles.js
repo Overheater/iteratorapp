@@ -25,18 +25,25 @@ export default StyleSheet.create({
         },
     iterateup:
         {
-
+            padding:20,
+            borderRadius: 40,
             alignItems: 'center',
             backgroundColor:'#3cb05b',
         },
     iteratedown:
         {
-
+            padding:20,
+            borderRadius: 40,
             alignItems: 'center',
             backgroundColor:'#f44531',
         },
-    buttonstuff:
+    buttontext:
         {
-            backgroundColor:'#24b8f4',
+            fontSize: 40,
+            
+        },
+    countText:
+        {
+            fontSize: 50,
         }
 });

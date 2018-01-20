@@ -21,21 +21,9 @@ export default class App extends Component<{}> {
     constructor(props)
     {
         super(props);
-        this.state={ value:0 };
-        this.iterateDown();
-        this.iterateUp();
+        this.state={ value:0 }; 
+        
     }
-
-    render() {
-    return (
-        <View style={styles.container}>
-            <Text> {this.state.value} </Text>
-            <IterateButton   onPress={this.iterateUp}/>
-            <Text>hey2</Text>
-            <IterateButton   onPress={this.iterateDown} />
-        </View>
-    );
-}
     iterateUp() {
         iterateup = (() => {
             this.setState({
@@ -50,6 +38,18 @@ export default class App extends Component<{}> {
             });
         });
     }
+    render() {
+    return (
+        <View style={styles.container}>
+            <Text style={styles.countText}>{this.state.value}</Text>
+            <Text style={styles.countText}> </Text>
+            <IterateButton buttonstyle={styles.iterateup} buttonName='iterate up' iterationbutton={()=>this.iterateUp()}/>
+            <Text style={styles.countText}> </Text>
+            <IterateButton buttonstyle={styles.iteratedown} buttonName='iterate down'  iterationbutton={()=>this.iterateDown()} />
+        </View>
+    );
+}
+
 }
 
 
