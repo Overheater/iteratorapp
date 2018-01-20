@@ -9,7 +9,7 @@ export default StyleSheet.create({
             flex: 1,
             justifyContent: 'center',
             alignItems: 'center',
-            backgroundColor: '#F5FCFF',
+            backgroundColor: '#524e4d',
         },
     number:
         {
@@ -28,22 +28,25 @@ export default StyleSheet.create({
             padding:20,
             borderRadius: 40,
             alignItems: 'center',
-            backgroundColor:'#3cb05b',
+            backgroundColor:'#f9cf59',
         },
     iteratedown:
         {
             padding:20,
             borderRadius: 40,
             alignItems: 'center',
-            backgroundColor:'#f44531',
+            backgroundColor:'#f56528',
         },
     buttontext:
         {
+            fontFamily:'notoserif',
             fontSize: 40,
             
         },
     countText:
         {
+            color: '#f0e8db',
+            fontFamily:'serif',
             fontSize: 50,
         }
 });

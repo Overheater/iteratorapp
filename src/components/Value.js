@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 import styles from '../styles/AppStyles';
 // enables the state function for iterating the number after pressing either button
+//got the follow ERROR "Element type is invalid: expected a string or class/function but got: object." Fixed by adding export default  below
 export default class Value extends  Component
 {
     render() {

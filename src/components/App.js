@@ -42,9 +42,9 @@ export default class App extends Component<{}> {
         <View style={styles.container}>
             <Value countval={this.state.value}/>
             <Text style={styles.countText}> </Text>
-            <IterateButton buttonstyle={styles.iterateup} buttonName='iterate up' iterationbutton={()=>this.iterateUp()}/>
+            <IterateButton buttonstyle={styles.iterateup} buttonName='COUNT UP' iterationbutton={()=>this.iterateUp()}/>
             <Text style={styles.countText}> </Text>
-            <IterateButton buttonstyle={styles.iteratedown} buttonName='iterate down'  iterationbutton={()=>this.iterateDown()} />
+            <IterateButton buttonstyle={styles.iteratedown} buttonName=' COUNT DOWN'  iterationbutton={()=>this.iterateDown()} />
         </View>
     );
 }
