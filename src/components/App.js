@@ -25,17 +25,15 @@ export default class App extends Component<{}> {
         
     }
     iterateUp() {
-        iterateup = (() => {
+        
             this.setState({
                 value: this.state.value + 1
-            })
         });
     }
     iterateDown() {
-        iteratedown = (() => {
+        
             this.setState({
                 value: this.state.value - 1
-            });
         });
     }
     render() {
